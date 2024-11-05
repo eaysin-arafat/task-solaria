@@ -1,0 +1,101 @@
+.filterContainer {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
+  position: relative;
+  background: black;
+  width: 250px;
+  height: 300px;
+  border-radius: 10px;
+  padding: 1.5rem;
+  color: #aaa;
+  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.filterItem {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title {
+  color: white;
+  margin-top: 0.2rem;
+  margin-bottom: 0.1rem;
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+}
+
+.filterLabel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.buttonGroup {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+  gap: 0.8rem;
+}
+
+.filterButton {
+  outline: 0;
+  border: 0;
+  display: flex;
+  padding: 0.5rem;
+  flex-direction: column;
+  color: #fff;
+  font-weight: 600;
+  background-color: #1e90ff;
+  border-radius: 0.5em;
+  box-shadow: 0 0.625em 1em 0 rgba(30, 143, 255, 0.35);
+  overflow: hidden;
+}
+
+.filterButton:hover {
+  color: #e8e8e8;
+}
+
+.activeButton {
+  background-color: #1a78d6;
+  color: #fff;
+}
+
+.buttonGroup {
+  display: flex;
+}
+
+.sliderContainer {
+  position: relative;
+  width: 100%;
+}
+
+.sliderContainer input {
+  width: 100%;
+}
+
+.clearFilterButton {
+  outline: none;
+  border: 2px solid #1e90ff;
+  background-color: transparent;
+  color: #1e90ff;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5em;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  margin-top: 0.6rem;
+  width: 100%;
+  text-align: center;
+}
+
+.clearFilterButton:hover {
+  background-color: #1e90ff;
+  color: #fff;
+}
