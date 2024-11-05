@@ -54,6 +54,9 @@ The main application component that renders:
 - The background image as an SVG.
 - **`FilterControl`** for user filter inputs.
 - **`PolygonTooltip`** to show polygon data on hover.
+- **`Polygon`** component to render the polygons that can be filtered.
+
+The Polygon component is responsible for rendering SVG polygons based on the data. It is part of the SVG structure and interacts with the filtering and hover functionality.
 
 #### usePolygon.ts (Custom Hook)
 
@@ -119,6 +122,7 @@ Displays the tooltip with polygon details on hover.
 
 - **`calculate-polygon-area.ts`**: Calculates the area of a polygon based on its data points.
 - **`format-number.ts`**: Utility for formatting numbers, used for prices and areas in tooltips.
+- **`get-unique-statuses.ts`**: This utility function extracts and returns unique polygon statuses from the dataset. It returns an array of status options formatted for use in the filter control.
 
 ### Technologies Used
 
@@ -127,6 +131,7 @@ Displays the tooltip with polygon details on hover.
 - **CSS Modules**: For styling and scoped CSS.
 
 🎨 Screenshots
+![Image for polygon filter visualization](/polygon-filter.png "polygon filter")
 
 ### Example Usage
 
